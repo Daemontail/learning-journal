@@ -2,6 +2,7 @@ html,
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: "Source Sans 3",sans-serif;
 }
 /* Navigation section */
@@ -25,7 +26,7 @@ nav{
     list-style-type:none;
     align-items: center;
     text-align: center;
-    gap:60px;
+    gap:40px;
 }
 .nav-links > li > a {
     text-decoration: none;
@@ -38,7 +39,7 @@ nav{
     color:whitesmoke;
     background-image: url("../images/article-image-hero.png");
     background-size: cover;
-    padding:0.625em;
+    padding:1.5em;
 }
 header{
     margin-top:3em;
