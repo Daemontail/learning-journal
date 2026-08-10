@@ -11,7 +11,7 @@ function rendermoreblogs() {
     if(currBlogs < blogEls.length){
     const blogcount = currBlogs + 3
     const main = document.getElementById('main')
-    while (blogcount > currBlogs) {
+    while (blogcount > currBlogs && currBlogs < blogEls.length) {
         const {name,date,description,image} = blogEls[currBlogs]
         main.innerHTML += `
         <article class="article">
@@ -24,10 +24,10 @@ function rendermoreblogs() {
         </article>
             `
         currBlogs++
-        if(currBlogs === blogEls.length){
+    }
+    if(currBlogs === blogEls.length){
             document.getElementById('view-more').textContent=''
         }
-    }
 }
 }
 rendermoreblogs()
