@@ -1,0 +1,1 @@
+A learning journal app made using vanilla css, html and javascript. 
