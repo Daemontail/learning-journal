@@ -4,17 +4,22 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: "Source Sans 3",sans-serif;
+    background-color: whitesmoke;
 }
 /* Navigation section */
-nav,.logo,.nav-links{
+nav,
+.logo,
+.nav-links{
     display:flex;
 }
-.logo,.nav-links{
+.logo,
+.nav-links{
     align-items: center;
 }
 nav{
     justify-content: space-between;
     padding:0.625em 1.25em;
+    background-color: white;
 }
 
 .logo{
@@ -50,7 +55,7 @@ a{
     text-transform: uppercase;
     margin-bottom: 0.25em;
 }
-header p{
+.hero-desc{
     max-width: 600px;
 }
 
@@ -89,8 +94,12 @@ footer{
     background-color:#202020;
 }
 
+
 /* Media queries */
 @media(min-width:768px){
+    .hero-article{
+        padding: 10em 1.5em 1.5em;
+    }
     main{
         grid-template-columns: repeat(3,1fr);
     }
